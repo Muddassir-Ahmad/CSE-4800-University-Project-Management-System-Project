@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPMS-Student Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <style>
+        form {
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0px 0px 10px 0px;
+            border-radius: 10px;
+        }
+        .sDec{
+            border: 3px solid #3974c1;
+            border-radius: 10px;  
+            margin-bottom: 25px;
+
+        }
+        
+    </style>
+</head>
+
+<!-- <body style="background-color:lightsteelblue"> -->
+    <body>
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <form action="insert.php" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <h3 class="text-center mb-3 mt-3"> <strong>Student Registration</strong> </h3>
+                    </div>
+
+                    <hr class="p-2 rounded">
+  <!-- <hr class="sDec"> -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Student Name :
+                                <input type="text" placeholder="Your Full Name" class="form-control" name="r_name" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Student Email :
+                                <input type="text" placeholder="Your Versity Email(@lus.ac.bd)" class="form-control" name="r_email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Student ID :
+                        <input placeholder="Your Versity Student ID" type="text" class="form-control" name="r_id" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Department :
+                        <select class="form-control " name="r_dept" required>
+                            <option value="" selected>Select Your Department </option>
+                            <option value="CSE">CSE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="CE">CE</option>
+                            <option value="BBA" >BBA</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            Batch :
+                        <select class="form-control" name="r_batch" required>
+                            <option value="" selected>Select Your Batch </option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                            <option value="60">60</option>
+                        </select>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Section :
+                        <select class="form-control" name="r_sec" required>
+                            <option value="" selected> Select Your Section</option>
+                            <option value="">Doesn't have a section</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="G">G</option>
+                            <option value="H">H</option>
+                            <option value="I">I</option>
+                            <option value="J">J</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Password :
+                        <input placeholder="Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji." type="text" class="form-control" name="r_pass" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                               Confirm Password :
+                        <input type="text" placeholder="Sample(Abcde123@)" class="form-control" name="r_con_pass" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Mobile :
+                        <input type="text" class="form-control" name="r_mobile" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mt-1">
+                            <div class="mb-3">
+                                Image :
+                                <input type="file" name="image" src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                <button type="submit" class="btn  btn-secondary col-12 mt-2 mb-2" name="submit">Register</button>
+                    Already Registered?<a href="studentLogin.html">Login Here</a>
+					
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
