@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPMS-Teacher Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <style>
+        form {
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0px 0px 10px 0px;
+            border-radius: 10px;
+        }
+
+        .sDec {
+            border: 3px solid #3974c1;
+            border-radius: 10px;
+            margin-bottom: 25px;
+
+        }
+    </style>
+</head>
+
+<!-- <body style="background-color:lightsteelblue"> -->
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <form action="insertTeacher.php" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <h3 class="text-center mb-3 mt-3"> <strong>Teacher Registration</strong> </h3>
+                    </div>
+
+                    <hr class="p-2 rounded">
+                    <!-- <hr class="sDec"> -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Teacher Name :
+                                <input type="text" placeholder="Your Full Name" class="form-control" name="r_name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Teacher Email :
+                                <input type="text" placeholder="Your Versity Email(@lus.ac.bd)" class="form-control"
+                                    name="r_email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                University Short Name :
+                                <input placeholder="University Provided Short Name" type="text" class="form-control"
+                                    name="r_short_name" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Department :
+                                <select class="form-control " name="r_dept" required>
+                                    <option value="" selected>Select Your Department </option>
+                                    <option value="CSE">CSE</option>
+                                    <option value="EEE">EEE</option>
+                                    <option value="CE">CE</option>
+                                    <option value="BBA">BBA</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            Designation :
+                            <input type="text" class="form-control" name="r_des" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Mobile :
+                                <input type="text" class="form-control" name="r_mobile" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Password :
+                                <input
+                                    placeholder="Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji."
+                                    type="text" class="form-control" name="r_pass" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Confirm Password :
+                                <input type="text" placeholder="Sample(Abcde123@)" class="form-control" name="r_con_pass" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- <div class="col-lg-6 col-md-6">
+                            <div class="mb-3">
+                                Mobile :
+                                <input type="text" class="form-control" name="r_mobile" required>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-6 col-md-6 mt-1">
+                            <div class="mb-3">
+                                Image :
+                                <input type="file" name="image" src="" alt="" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn  btn-secondary col-12 mt-2 mb-2" name="submit">Register</button>
+                    Already Registered?<a href="teacherLogin.html">Login Here</a>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
